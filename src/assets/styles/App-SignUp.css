@@ -1,0 +1,70 @@
+.SignUp {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1em;
+}
+
+
+.SignUp h1 {
+    margin-bottom: .5em;
+}
+
+.SignUp button {
+    margin-top: 5px;
+}
+
+.SignUp-Field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+}
+
+.SignUp-Field label {
+    width: 100%;
+    font-size: 1.4em;
+}
+
+.SignUp input {
+    height: 2.2em;
+    box-shadow: 1px 1px 5px rgb(183, 182, 182);
+}
+
+.SignUp-Info {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.SignUp-Info p {
+    width: 90%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+.success {
+    background-color: green;
+}
+
+.valid {
+    border: 2px solid green;
+}
+
+.invalid {
+    border: 2px solid red;
+}
