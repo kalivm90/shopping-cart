@@ -83,3 +83,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* , .Store */
+.App {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.App {gap: 2em;}
+/* .Store {gap: 1em;} */

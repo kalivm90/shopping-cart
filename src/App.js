@@ -5,7 +5,8 @@ import Content from "./components/App-Content";
 import SignUp from "./components/App-SignUp";
 import Footer from "./components/Footer";
 
-function App({user, setUser}) {
+// {user, setUser}
+function App() {
   return (
     <div className="App">
       <header className="App-Hero">
@@ -18,7 +19,7 @@ function App({user, setUser}) {
           </div>
       </header>
 
-      <SignUp user={user} setUser={setUser}/>
+      <SignUp/> {/* user={user} setUser={setUser} */}
       <Footer />
 
     </div>

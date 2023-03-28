@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react"
+import React, {useContext, useState} from "react"
+import {UserContext} from "../RouteSwitch.js"
 import "../assets/styles/App-SignUp.css"
 
-
-const SignUp = ({user, setUser}) => {
-
+/* {user, setUser} */
+const SignUp = () => {
+    const {user, setUser} = useContext(UserContext)
+    
     const [showError, setShowError] = useState("");
     const [didSubmit, setDidSubmit] = useState(false);
     const [successMessage, setSuccessMessage] = useState(false);
@@ -42,12 +44,12 @@ const SignUp = ({user, setUser}) => {
     const updateUserObj = (fields) => {
         const obj = {}
         fields.forEach(i => obj[i.name] = i.value)
-        setUser(obj);
-
         const storedUser = JSON.parse(localStorage.getItem("user"))
 
         if (!storedUser || didSubmit) {
             localStorage.setItem("user", JSON.stringify(obj));
+            setUser(obj);
+            // console.log(user, "USER");
             setDidSubmit(false);
             showSuccessTimeout();
             clearFields(fields);
@@ -119,7 +121,6 @@ const SignUp = ({user, setUser}) => {
                     {showError && (
                         <div className="error-message show">{showError}</div>
                     )}
-                {/* <button id="register" onClick={onSubmit}>Register</button> */}
                 <button 
                     id="register" 
                     className={successMessage ? 'success' : ''} 

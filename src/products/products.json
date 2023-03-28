@@ -1,0 +1,22 @@
+{
+    "products" : [
+        {   
+            "src": "minecraft.png",
+            "name": "Minecraft",
+            "description": "Explore infinite worlds and build everything from the simplest of homes to the grandest of castles. Play in creative mode with unlimited resources or mine deep into the world in survival mode, crafting weapons and armor to fend off dangerous mobs. Create, explore and survive alone or with friends on mobile devices or Windows 10.",
+            "cost": 4.00 
+        },
+        {   
+            "src": "GOI.png", 
+            "name": "Getting Over It", 
+            "description": "Getting Over It with Bennett Foddy is a punishing climbing game, a homage to Jazzuo's 2002 B-Game classic 'Sexy Hiking'. You move the hammer with the mouse, and that's all there is. With practice, you'll be able to jump, swing, climb and fly. Great mysteries and a wonderful reward await the master hikers who reach the top of the mountain.", 
+            "cost": 3.00
+        },
+        {   
+            "src": "templeRun.png", 
+            "name": "Temple Run 2", 
+            "description": "Navigate perilous cliffs, zip lines, mines and forests as you try to escape with the cursed idol. How far can you run?! With over a zillion downloads, Temple Run redefined mobile gaming. Now get more of the exhilarating running, jumping, turning and sliding you love in Temple Run 2!", 
+            "cost": 3.00
+        }
+    ]
+}
