@@ -1,32 +1,24 @@
-import React, { createContext, useEffect, useState } from "react"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { UserProvider } from "./userDetails";
 import App from "./App"
 import Store from "./Store";
+import Cart from "./Cart";
 
 
-export const UserContext = createContext();
 
 export const RouteSwitch = () => {
-
-    const [user, setUser] = useState(null);
-
-    useEffect(() => {
-        const localUser = localStorage.getItem("user")
-        if (localUser) {
-            setUser(JSON.parse(localUser));
-        }
-    }, [])
-
-    console.log("user:", user);
-
     return (
-        <UserContext.Provider value={{user, setUser}}>
+        <UserProvider>
             <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<App />} />
-                    <Route path="/store" element={<Store />} />
-                </Routes>
+              <Routes>
+                <Route path="/" exact element={<App />} />
+                <Route
+                   path="/store"
+                   exact
+                   element={<Store />} />
+                <Route path="/cart" element={<Cart />}></Route>
+              </Routes>
             </BrowserRouter>
-        </UserContext.Provider>
-    )
+          </UserProvider>
+       )
 }

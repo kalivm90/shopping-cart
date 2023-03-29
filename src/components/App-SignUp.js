@@ -1,11 +1,15 @@
 import React, {useContext, useState} from "react"
-import {UserContext} from "../RouteSwitch.js"
+import { useNavigate } from "react-router-dom";
+// import {UserContext} from "../RouteSwitch.js"
 import "../assets/styles/App-SignUp.css"
+import { UserContext } from "../userDetails";
+
 
 /* {user, setUser} */
 const SignUp = () => {
-    const {user, setUser} = useContext(UserContext)
-    
+    const { username, setUsername } = useContext(UserContext);
+    // const navigate = useNavigate();
+
     const [showError, setShowError] = useState("");
     const [didSubmit, setDidSubmit] = useState(false);
     const [successMessage, setSuccessMessage] = useState(false);
@@ -42,17 +46,20 @@ const SignUp = () => {
     }
 
     const updateUserObj = (fields) => {
+        console.log(fields)
         const obj = {}
         fields.forEach(i => obj[i.name] = i.value)
+
         const storedUser = JSON.parse(localStorage.getItem("user"))
 
         if (!storedUser || didSubmit) {
             localStorage.setItem("user", JSON.stringify(obj));
-            setUser(obj);
+            setUsername(obj);
+            // navigate("/store");
             // console.log(user, "USER");
             setDidSubmit(false);
             showSuccessTimeout();
-            clearFields(fields);
+            // clearFields(fields);
         } else {
             setDidSubmit(true);
             errorMessage("There is already a user, click register again to update");

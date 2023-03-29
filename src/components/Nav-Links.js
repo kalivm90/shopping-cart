@@ -1,13 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Links = ({name, alt, path, id}) => {
     
     return (
         <div id={id}>
-            <a href={path}>
+            <Link to={path}>
                 <img className="svg" src={name} alt={alt}></img>
                 {alt}
-            </a>
+            </Link>
+            {/* <a href={path}>
+                <img className="svg" src={name} alt={alt}></img>
+                {alt}
+            </a> */}
         </div>
     )
 }

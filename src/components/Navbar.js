@@ -18,7 +18,7 @@ const Navbar = () => {
     const images = [
         {"name": Home, alt: "Home", "path": "/"},
         {"name": Store, alt: "Store", "path": "/store"},
-        {"name": Cart, alt: "Cart", "path": ""}
+        {"name": Cart, alt: "Cart", "path": "/cart"}
     ]
 
     const randColor = () => {
