@@ -12,6 +12,8 @@ const Store = () => {
     const { product } = useContext(ProductContext);
     const localUser = JSON.parse(localStorage.getItem("user"))
 
+    // console.log(product)
+
     const { first, last } = username 
     ? username 
     : localUser 

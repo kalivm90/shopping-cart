@@ -1,3 +1,4 @@
+import { type } from "@testing-library/user-event/dist/type"
 import React, { useContext, useEffect, useState } from "react"
 import "../assets/styles/Card.css"
 import { UserContext } from "../userDetails"
@@ -6,8 +7,7 @@ import { stringToDollar, getLocalStorage, setLocalStorage } from "../Util"
 const Card = (props) => {
 
   const { cartItemCount, setCartItemCount } = useContext(UserContext);
-  const { cardItems, setCartItems } = useContext(UserContext)
-
+  const { cartItems, setCartItems } = useContext(UserContext)
 
   const checkDuplicates = (localCart, obj) => {
     if (localCart) {
@@ -42,15 +42,15 @@ const Card = (props) => {
   }
 
   return (
-    <div className="Card" id={props.index}>
+    <div className="Card" id={props.index} data-testid="card">
       <div className="Card-Image">
-        <img className="prod-img" src={props.src} alt={props.name} />
+        <img className="prod-img" src={props.src} alt={props.name} data-testid="src"/>
       </div>
       <div className="Card-Details">
         <h2 className="Card-Name">{props.name}</h2>
-        <p className="Card-Desc">{props.desc}</p>
+        <p className="Card-Desc" data-testid="desc">{props.desc}</p>
         <div className="Price-Container">
-          <p className="Card-Price">{stringToDollar(props.cost)}</p>
+          <p className="Card-Price" data-testid="cost">{stringToDollar(props.cost)}</p>
           <button className="Card-Add" onClick={handleClick}>Add To Cart</button>
         </div>
       </div>

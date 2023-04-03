@@ -17,6 +17,42 @@
             "name": "Temple Run 2", 
             "description": "Navigate perilous cliffs, zip lines, mines and forests as you try to escape with the cursed idol. How far can you run?! With over a zillion downloads, Temple Run redefined mobile gaming. Now get more of the exhilarating running, jumping, turning and sliding you love in Temple Run 2!", 
             "cost": 3.00
+        },
+        {
+            "src": "gta.jpeg",
+            "name": "GTA Vice City",
+            "description": "From the decade of big hair, excess and pastel suits comes a story of one man's rise to the top of the criminal pile. Vice City, a huge urban sprawl ranging from the beach to the swamps and the glitz to the ghetto, was one of the most varied, complete and alive digital cities ever created.",
+            "cost": 1.50
+        },
+        {
+            "src": "crossy.avif",
+            "name": "Crossy Road",
+            "description": "Join over 200 MILLION players worldwide and experience Hipster Whale's massive viral #1 hit! Same device multiplayer: Compete against your friends and family on the same device. Play Crossy Road on the Big Screen with Android TV!",
+            "cost": 0.50
+        },
+        {
+            "src": "drift.png",
+            "name": "Drift Racing 2",
+            "description": "A SEQUEL OF THE MOST DESIRED DRIFT-GAME Over 100 000 000 fans around the world have already downloaded CarX series games. It’s your time to join! BEWARE the danger of addiction! You may not want to quit & play for hours. Taking a quick break every 40 minutes is strongly advised.",
+            "cost": 1.50
+        },
+        {
+            "src": "2k.avif",
+            "name": "NBA 2K Mobile",
+            "description": "Collect and forever hold onto basketball cards of your favorite NBA superstars and teams from the 2022-23 NBA season. Take your dream NBA roster to the top with your favorite online basketball sports game. Become the King of the Court!",
+            "cost": 3.25
+        },
+        {
+            "src": "chess.webp",
+            "name": "Chess.com",
+            "description": "Enjoy free unlimited 3d chess games and improve your chess rating with 350,000+ tactics puzzles, more than 10 million chess games a day, interactive lessons and videos, and over 100 powerful computer opponents. Unlock your inner chess master today!",
+            "cost": 5.00
+        },
+        {
+            "src": "retro.png",
+            "name": "Retro Goal",
+            "description": "With graphics inspired by the most beloved football games of 16-bit era and the accuracy of modern touchscreen controls, you'll be slotting away goal after goal with pixel-perfect precision. Choose a team from the world's favourite leagues and recruit the superstars, professionals and hotheads who will lead you to victory!",
+            "cost": 1.25
         }
     ]
 }
