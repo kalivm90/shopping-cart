@@ -59,7 +59,7 @@ const SignUp = () => {
             // console.log(user, "USER");
             setDidSubmit(false);
             showSuccessTimeout();
-            // clearFields(fields);
+            clearFields(fields);
         } else {
             setDidSubmit(true);
             errorMessage("There is already a user, click register again to update");

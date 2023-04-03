@@ -5,7 +5,7 @@ import Content from "./components/App-Content";
 import SignUp from "./components/App-SignUp";
 import Footer from "./components/Footer";
 
-// {user, setUser}
+
 function App() {
   return (
     <div className="App">
@@ -19,7 +19,7 @@ function App() {
           </div>
       </header>
 
-      <SignUp/> {/* user={user} setUser={setUser} */}
+      <SignUp/> 
       <Footer />
 
     </div>

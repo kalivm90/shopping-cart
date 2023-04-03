@@ -1,0 +1,146 @@
+.Cart {
+    display: flex;
+    flex-direction: column;
+}
+
+.Body-Container {
+    background-color: white;
+    padding: 3em;
+}
+
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+th {
+    padding: 20px;
+    font-size: 1.5em;
+    border-bottom: 2px solid rgb(199, 199, 199);
+}
+
+td {
+    width: 25%;
+    padding: 20px;
+}
+
+td p {
+    font-size: 1.5em;
+}
+
+
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+ 
+.Img-Name-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Img-Name-Container p {
+    font-size: 2.2em;
+    width: 300px;
+    font-family: "Yanone Kaffeesatz";
+    font-weight: 600;
+}
+
+
+.Inc-Dec {
+    display: flex;
+    gap: 10px;
+} 
+
+.Inc-Dec button {
+    width: 120px;
+    height: 30px;
+    font-size: 1.5em;
+    border-radius: 0%;
+}
+
+
+#test {
+    width: 100px;
+}
+
+
+.Grand-Total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.Grand-Total::before {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 10px;
+    border-top: 2px solid rgb(199, 199, 199);
+}
+
+.Grand-Container {
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.Grand-Container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+.Grand-Item p {
+    font-size: 2em;
+    font-weight: 600;
+    font-family: "Yanone Kaffeesatz";
+}
+
+.Grand-Pay {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 1084px) {
+    .Img-Name-Container p {
+        width: 100px;
+        background-color: red;
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width: 886px) {
+    td {
+        font-size: .5em;
+    }
+    #line-title {
+        font-size: 3em;   
+    }
+    .Inc-Dec {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 723px) {
+    .Inc-Dec button {
+        width: 75px;
+    }
+    .Grand-Total {
+        /* width: 619px; */
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,82 @@
+.Card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  min-height: fit-content;
+  width: min-content;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.Card-Image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prod-img {
+  object-fit: contain;
+  width: 170px;
+  /* margin-top: 50px; */
+}  
+
+.Card-Details {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.Price-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.Card-Price {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 617px) {
+  .Card-Details .Card-Desc {
+    display: none;
+    visibility: hidden;
+  }
+  .prod-img {
+    width: 180px;
+  }
+  .Card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 370px;
+
+  }
+  .Price-Container {
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .Card-Container {
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Store button {
+    height: 40px;
+  }
+}
